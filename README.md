@@ -11,8 +11,8 @@ Copy the Lumberjack folder to /site/modules and then refresh the modules from Ad
 
 Two new fields will be created when Lumberjack is installed.
 
-lumb_ip_log - This field is used to store the IP
-lumb_ua_log - This field is used to store the User Agent String
+* lumb_ip_log - This field is used to store the IP
+* lumb_ua_log - This field is used to store the User Agent String
 
 You can add both fields or just one to the required templates. Pages using those templates will then automatically store the IP and User Agent of the user when the page is saved.
 
