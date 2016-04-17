@@ -47,9 +47,11 @@ class Lumberjack extends WireData implements Module {
     // If the page template has the required field we can log the User Agent string
     if($tpl->hasField("lumb_ua_log")) {
       $page->of(false);
-      $page->lumb_ua_log = $_SERVER['HTTP_USER_AGENT'];
+      $ua_string = $_SERVER['HTTP_USER_AGENT']; // Get the User Agent String
+      $ua_string = str_replace(array("\r", "\n", "\t"), ' ', substr(strip_tags($ua_string), 0, 255)); // Sanitize
+      $page->lumb_ua_log = $ua_string;
       $page->save('lumb_ua_log'); // Save the field
-      //$this->message($_SERVER['HTTP_USER_AGENT']); // Debug
+      //$this->message($ua_string); // Debug
     }
   }
 
