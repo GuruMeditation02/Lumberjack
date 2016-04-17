@@ -4,7 +4,7 @@ $info = array(
 	// The module title, typically a little more descriptive than the class name
 	'title' => 'Lumberjack',
 	// version number (integer)
-	'version' => '0.1.0',
+	'version' => '0.1.1',
 	// author
 	'author' => 'GuruMeditation',
 	// summary is brief description of what this module is
